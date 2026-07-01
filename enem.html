@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniGuia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Bebas Neue", sans-serif;
+            padding: 2px;
+            color: #fff;
+            background-color: #4E0B17;
+        }
+
+        .enem {
+            margin-top: 100px; 
+
+        }
+        .amarelo {
+            color: #ffc400;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h2 {
+            text-align: center;
+            color: #fff;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+        }
+
+        p {
+            text-indent: 50px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #ffc400;
+            padding: 10px 0;
+        }
+
+        .pergunta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .pergunta h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #f6f6f6;
+        }
+
+        .icone {
+            font-size: 30px;
+            font-weight: bold;
+            color: #ffc400;
+            transition: transform 0.3s ease;
+        }
+
+        .resposta {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            color: #fff;
+        }
+
+        .faq-item.ativa .resposta {
+            max-height: 200px;
+            padding-top: 10px;
+        }
+
+        .faq-item.ativa .icone {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+           <img src="img/logo.png" alt="logo">
+        </div>
+        
+        <div class="menu">
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="enem.html" id="estilo">Enem</a>
+                <a href="federais.html">Federais</a>
+                <a href="particulares.html">Particulares</a>
+                <a href="contato.html">Contato</a>
+                <a href="sobre_nos.html">Sobre Nós</a>
+                <a href="cronograma.html">Cronograma</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="enem">
+        <h1>Tudo sobre o seu <span class="amarelo">ENEM<span></h1>
+
+        <!-- Pergunta 1 -->
+        <div class="faq-item">
+            <div class="pergunta">
+                <h2>Nota de Corte:</h2>
+                <span class="icone">+</span>
+            </div>
+            <div class="resposta">
+                <a href="https://acessounico.mec.gov.br/busca" target="_blank"><p> Nota de Corte </p></a>
+            </div>
+        </div>
+        
+        <!-- Pergunta 2 -->
+        <div class="faq-item">
+            <div class="pergunta">
+                <h2>O que é o ENEM?</h2>
+                <span class="icone">+</span>
+            </div>
+            <div class="resposta">
+                <p>
+                    O ENEM (Exame Nacional do Ensino Médio) é uma avaliação criada 
+                    pelo Ministério da Educação em 1998. Atualmente, ele é utilizado
+                    como uma das principais formas de ingresso no ensino superior
+                    brasileiro, permitindo acesso ao SISU, PROUNI, FIES e diversas
+                    instituições de ensino.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Pergunta 3 -->
+        <div class="faq-item">
+            <div class="pergunta">
+                <h2>Quem pode participar do ENEM?</h2>
+                <span class="icone">+</span>
+            </div>
+            <div class="resposta">
+                <p>
+                    Pode participar:
+                    Quem já concluiu o Ensino Médio;
+                    Quem está concluindo o Ensino Médio;
+                    Estudantes dos anos anteriores como "treineiros", apenas para autoavaliação.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Pergunta 4 -->
+        <div class="faq-item">
+            <div class="pergunta">
+                <h2>Como se inscrever no ENEM?</h2>
+       
+                <span class="icone">+</span>
+            </div>
+            <div class="resposta">
+                 <p> 
+                    A inscrição é realizada exclusivamente pela Página do Participante do Inep,
+                    utilizando CPF e conta Gov.br Site oficial: 
+                </p>
+                <a href="https://enem.inep.gov.br/participante/?utm_source=chatgpt.com" target="_blank"><p> Página do participante </p></a>
+            </div>
+        </div>
+
+
+        <!-- Pergunta 5 -->
+        <div class="faq-item">
+            <div class="pergunta">
+                <h2>Qual o valor da taxa de inscrição?</h2>
+                <span class="icone">+</span>
+            </div>
+            <div class="resposta">
+                <p>
+                    Na edição de 2026, a taxa de inscrição é de R$ 85,00.
+                </p>            
+            </div>
+        </div>
+
+
+        <!-- Pergunta 6 -->
+        <div class="faq-item">
+            <div class="pergunta">
+                <h2>Como pedir isenção da taxa?</h2>
+        
+                <span class="icone">+</span>
+            </div>
+            <div class="resposta">
+                <p>
+                    Podem solicitar isenção:
+                    Estudantes do 3º ano da rede pública;
+                    Pessoas que cursaram todo o ensino médio em escola pública ou como bolsistas
+                    integrais com renda familiar de até 1,5 salário mínimo por pessoa;
+                    Inscritos no CadÚnico;
+                    Beneficiários do programa Pé-de-Meia.
+                </p>
+            </div>
+        </div>
+
+         <!-- Pergunta 7 -->
+        <div class="faq-item">
+            <div class="pergunta">
+                <h2>Quantas questões tem o ENEM?</h2>
+                <span class="icone">+</span>
+            </div>
+            <div class="resposta">
+                <p>
+                    O exame possui:
+                    180 questões objetivas;
+                    1 redação dissertativo-argumentativa.
+                    As questões são divididas em quatro áreas do conhecimento.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Pergunta 8 -->
+        <div class="faq-item">
+            <div class="pergunta">
+                <h2>Como é dividida a prova?</h2>
+                <span class="icone">+</span>
+            </div>
+            <div class="resposta">
+                <p>1º dia</p>
+                <p>
+                    - Linguagens, Códigos e suas Tecnologias
+                    - Ciências Humanas e suas Tecnologias
+                    - Redação</p>
+                <p>2º dia</p>
+                <p>
+                    - Matemática e suas Tecnologias
+                    - Ciências da Natureza e suas Tecnologias 
+                </p>
+                <p>
+                    Total: 180 questões + redação.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pergunta 9 -->
+        <div class="faq-item">
+            <div class="pergunta">
+                <h2>O que é a TRI?</h2>
+        
+                <span class="icone">+</span>
+            </div>
+            <div class="resposta">
+                <p>
+                    TRI significa Teoria de Resposta ao Item.
+                    Ela não considera apenas quantas questões você acertou, mas também a coerência dos seus acertos. Acertar questões difíceis e errar muitas fáceis pode reduzir a nota final, pois o sistema entende que houve inconsistência no padrão de respostas.
+                </p>
+            </div>
+        </div>
+
+        <!-- Pergunta 10 -->
+        <div class="faq-item">
+            <div class="pergunta">
+                 <h2>O que zera a redação?</h2>
+        
+                <span class="icone">+</span>
+            </div>
+            <div class="resposta">
+                <p>
+                    A redação recebe nota zero quando:
+                    Foge totalmente ao tema;
+                    Não é um texto dissertativo-argumentativo;
+                    Possui menos de 7 linhas;
+                    Contém impropérios ou desenhos;
+                    Está em branco;
+                    Apresenta cópia integral dos textos motivadores.
+                </p>
+            
+            </div>
+        </div>
+
+        <!-- Pergunta 11 -->
+        <div class="faq-item">
+            <div class="pergunta">
+                <h2>Como consultar a nota?</h2>
+                <span class="icone">+</span>
+            </div>
+            <div class="resposta">
+                <p>
+                    A nota é divulgada na Página do Participante.
+                    O estudante deve acessar com CPF e senha da conta Gov.br.
+                    Acesso: 
+                </p>
+                <a href="https://enem.inep.gov.br/participante/?utm_source=chatgpt.com"></a> 
+            </div>
+        </div>
+
+
+        <!-- Pergunta 12 -->
+        <div class="faq-item">
+            <div class="pergunta">
+                <h2>Acessibilidade no ENEM</h2>
+                <span class="icone">+</span>
+            </div>
+            <div class="resposta">
+                <p>
+                    Quem pode solicitar atendimento especializado?
+                    Participantes com deficiência, transtorno funcional específico (como TEA, dislexia, TDAH), gestantes,
+                    lactantes, idosos e pessoas com outras condições específicas previstas no edital. A solicitação é
+                    feita durante a inscrição. Fonte:
+                </p>
+                <a href="INEP - Perguntas Frequentes ENEM" target="_blank"></a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

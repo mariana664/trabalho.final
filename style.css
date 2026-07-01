@@ -1,0 +1,58 @@
+body {
+  background: #03002e;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 25px;
+  position: fixed;
+  width: 99%;
+ 
+}
+.logo img {
+  height: 65px;
+  width: auto;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu nav {
+  margin-inline: 20px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  padding-bottom: 5px;
+  gap: 15px;
+  background: #681020;
+  border-radius: 5px;
+  padding: 5px;
+}
+.menu nav a {
+  text-decoration: none;
+  color: #ffc400;
+  margin-inline: 10px;
+}
+.menu nav a:hover{
+  background-color: #ffc400;
+  color: #681020;
+  padding: 2px 5px;
+  border-radius: 5px;
+  
+}
+/*"animação" de clique*/
+#estilo{
+  background-color: #ffc400;
+  color: #681020;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
